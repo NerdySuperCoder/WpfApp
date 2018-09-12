@@ -12,17 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfAppApplication.ViewModels;
 
 namespace WpfAppApplication
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserView : Window
     {
-        public MainWindow()
+        public UserView()
         {
             InitializeComponent();
+            DataContext = new UserViewModel();
         }
     }
 }
